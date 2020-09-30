@@ -12,125 +12,132 @@
     <title>Document</title>
   </head>
   <body>
-    <a href="#"
-      ><img class="logo-image" src="/style/img/logo.png" alt="lemon"
+    <a href="#" class="logo main__logo"
+      ><img src="/style/img/logo.png" alt="lemon"
     /></a>
     <header>
-      <div class="conteiner main-menu">
-        <a class="logo-link" href="#"
-          ><img
-            class="logo-image-litle"
-            src="/style/img/logo-little.png"
-            alt="lemon"
+      <div class="conteiner header__conteiner">
+        <a class="logo header__logo" href="#"
+          ><img src="/style/img/logo-little.png" alt="lemon"
         /></a>
         <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-            <li class="nav-item">
-              <!--<a class="nav-link" href="#">Recipes </a>
-              <ul>
-
-
-                <li><a href="#">RECOMMENDED</a></li>
-                <li><a href="#">POPULAR</a></li>
-                <li><a href="#">QUICK & EASY</a></li>
-                <li><a href="#">HEALTHY</a></li>
-                <li><a href="#">NEWEST</a></li>
-              </ul>-->
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+            <li class="nav__item sub__list">
+              <a class="nav__link" href="#">Recipes </a>
+              <ul class="nav__sub__list">
+                <li class="nav__item sub__item">
+                  <a class="nav__link" href="#">RECOMMENDED</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link" href="#">POPULAR</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link" href="#">QUICK & EASY</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link" href="#">HEALTHY</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link" href="#">NEWEST</a>
+                </li>
+              </ul>
+              <!--nav__sub__list-->
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Photo Galleries</a>
+            <!--nav__item sub__list-->
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Photo Galleries</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Categories</a>
+            <li class="nav__item"><a class="nav__link" href="#">Videos</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">All Categories</a>
             </li>
           </ul>
+          <!--nav__list-->
         </nav>
         <input class="search" type="text" />
       </div>
+      <!--conteiner header__conteiner-->
     </header>
     <main>
-      <section>
-        <div class="conteiner first-content">
-          <article class="first-article">
-            <img src="/style/img/Logo4.png" alt="" />
-            <h1 class="title-first">Bananas Foster Ice Cream Cake</h1>
-            <p>
-              If you're looking for decadence, look no further — you've found
-              the Holy Grail of desserts. Honestly, this cake makes us wonder
-              why Bananas Foster hasn't always been served on top of ice cream
-              cake.
-            </p>
-            <button class="Fcontent-buttom">GET IT RECIPE</button>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div class="conteiner content-2">
-          <figure class="content-2-item">
-            <img src="/style/img/meal1.png" alt="" />
-            <figcaption>
-              Raspberry & Cream Frozen Yogurt Pie
-              <div class="coments">
-                <span>35mins</span>
-                <span>7</span>
-                <span>14</span>
-              </div>
-            </figcaption>
-          </figure>
-          <figure class="content-2-item">
-            <img src="/style/img/meal2.png" alt="" />
-            <figcaption>
-              Giant Ice Cream Sandwich
-              <div class="coments">
-                <span>35mins</span>
-                <span>7</span>
-                <span>14</span>
-              </div>
-            </figcaption>
-          </figure>
-          <figure class="content-2-item">
-            <img src="/style/img/meal3.png" alt="" />
-            <figcaption>
-              Dark Chocolate Crunch Ice Cream Sandwich Cake
-              <div class="coments">
-                <span>35mins</span>
-                <span>7</span>
-                <span>14</span>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+      <div class="conteiner first__section">
+        <article class="first__section__article">
+          <a href="#"><img src="/style/img/Logo4.png" alt="" /></a>
+          <h1 class="first__section__title">Bananas Foster Ice Cream Cake</h1>
+          <p>
+            If you're looking for decadence, look no further — you've found the
+            Holy Grail of desserts. Honestly, this cake makes us wonder why
+            Bananas Foster hasn't always been served on top of ice cream cake.
+          </p>
+          <button class="first__section__buttom">GET IT RECIPE</button>
+        </article>
+      </div>
+      <!--conteiner first__section-->
+
+      <div class="conteiner second__section">
+        <figure class="second__section__item">
+          <img src="/style/img/meal1.png" alt="" />
+          <figcaption>
+            Raspberry & Cream Frozen Yogurt Pie
+            <div class="second__section__comments">
+              <span class="second__icon clock__icon">35 mins</span>
+              <span class="second__icon line__icon comment__icon">7</span>
+              <span class="second__icon view__icon">14</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="second__section__item">
+          <img src="/style/img/meal2.png" alt="" />
+          <figcaption>
+            Giant Ice Cream Sandwich
+            <div class="second__section__comments">
+              <span class="second__icon clock__icon">20 mins</span>
+              <span class="second__icon line__icon comment__icon">4</span>
+              <span class="second__icon view__icon">356</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="second__section__item">
+          <img src="/style/img/meal3.png" alt="" />
+          <figcaption>
+            Dark Chocolate Crunch Ice Cream Sandwich Cake
+            <div class="second__section__comments">
+              <span class="second__icon clock__icon">15 mins</span>
+              <span class="second__icon line__icon comment__icon">4</span>
+              <span class="second__icon view__icon">16</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <!--conteiner second__section-->
     </main>
     <footer>
-      <div class="conteiner footer-menu">
+      <div class="conteiner footer__menu">
         <a class="logo-link" href="#"
           ><img class="logo-image-litle" src="/style/img/logo3.png" alt="lemon"
         /></a>
         <nav>
-          <ul class="nav-list">
-            <li class="nav-item footer-item">
-              <a class="nav-link footer-link" href="#">HOME</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">HOME</a>
             </li>
-            <li class="nav-item footer-item">
-              <a class="nav-link footer-link" href="#">Recipes </a>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">Recipes </a>
             </li>
-            <li class="nav-item footer-item">
-              <a class="nav-link footer-link" href="#"> Photo Galleries</a>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#"> Photo Galleries</a>
             </li>
-            <li class="nav-item footer-item">
-              <a class="nav-link footer-link" href="#">Videos</a>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">Videos</a>
             </li>
-            <li class="nav-item footer-item">
-              <a class="nav-link footer-link" href="#">All Categories</a>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">All Categories</a>
             </li>
           </ul>
         </nav>
-        <div class="lemon">
+        <div class="footer__lemon">
           <p>2016-2017 LEMON. All right reserved</p>
-          <img class="footer-img" src="/style/img/Icons.png" alt="" />
+          <img class="footer__img" src="/style/img/Icons.png" alt="" />
         </div>
       </div>
     </footer>

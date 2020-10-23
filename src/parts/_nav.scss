@@ -1,0 +1,154 @@
+$height-button: 28px;
+
+.nav {
+  @include medium {
+    position: fixed;
+    opacity: 0;
+    .nav__list {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.nav-btm {
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../img/menu.svg) center center no-repeat;
+  background-size: cover;
+  display: none;
+  cursor: pointer;
+  @include medium {
+    display: inline-block;
+  }
+}
+
+.nav-btm-wraper {
+  user-select: none;
+  @include medium {
+    order: 3;
+  }
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__item {
+  position: relative;
+}
+.nav__link {
+  font-size: 18px;
+  line-height: 1.27;
+  color: rgba(31, 21, 52, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover,
+  :active {
+    color: #1f1534;
+  }
+  @include large {
+    font-size: 14px;
+  }
+}
+
+.nav__sub-list {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+
+  background: #fbfcfd;
+  opacity: 0.6;
+  display: none;
+
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  z-index: 3;
+  @include large {
+    font-size: 10px;
+  }
+}
+
+.nav__item:hover .nav__sub-list {
+  display: block;
+  @include medium {
+    display: none;
+  }
+}
+
+.sub__link {
+  display: block;
+  padding: 5px 10px;
+}
+
+.button-wiht-icon {
+  margin-top: 0;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 14px;
+
+  @include large {
+    border: none;
+    background: none;
+    padding-right: 0px;
+    font-size: 12px;
+  }
+}
+.search-icon::before {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  background: url(../img/button-search.png) center center no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  left: 15px;
+  top: (calc((#{$height-button} - 12px) / 2));
+}
+
+.nav-btm-checkbox {
+  @include visualle-hidden;
+}
+
+.nav-btm-checkbox:checked + .nav {
+  @include medium {
+    left: 0;
+    top: 0;
+    z-index: 9;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    .nav__list {
+      width: 260px;
+      height: 100%;
+      background: #fff;
+
+      flex-direction: column;
+      padding: 20px 20px;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(0);
+    }
+    .nav__item:not(:last-child) {
+      margin-right: 0;
+    }
+
+    .nav__link {
+      font-size: 20px;
+      display: block;
+      padding: 10px 0;
+    }
+  }
+}

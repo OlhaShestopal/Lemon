@@ -1,0 +1,67 @@
+.section3__container {
+  display: flex;
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  line-height: 1;
+}
+.section3__container::before {
+  content: "";
+}
+.section3__container::after {
+  content: url(../img/Icon.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: #1e1e1e;
+  padding: 19px 15px;
+  opacity: 0.6;
+  left: 42%;
+}
+.content__section3 {
+  padding: 40px 70px 40px 40px;
+}
+.button-section3 {
+  margin-top: 0;
+}
+.section__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.info__item {
+  margin-right: 10px;
+  color: #555555;
+}
+.info-time::before {
+  content: url(../img/Clock-Icon.png);
+  margin: 0 5px;
+}
+.info-diagr::before {
+  content: url(../img/Easy-Icon.png);
+  margin: 0 5px;
+}
+.section3__title {
+  font-size: 32px;
+  color: #055555;
+}
+.section3__subtitle {
+  margin: 25px 0;
+}
+.vertical__line {
+  position: absolute;
+  width: 2px;
+  height: 245px;
+  background: #dddddd;
+  right: 50px;
+  cursor: pointer;
+}
+.vertical__line::after {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 2px;
+  background: #555555;
+}

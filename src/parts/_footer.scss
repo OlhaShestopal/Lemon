@@ -1,0 +1,23 @@
+.footer__menu {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f2f2f;
+  padding: 72px 95px;
+  color: #939393;
+  font-size: 12px;
+}
+.footer__lemon {
+  position: relative;
+}
+.footer__img {
+  position: absolute;
+  right: 0;
+}
+.footer__link {
+  color: #909090;
+}
+.footer-item:not(:last-child) {
+  margin-right: 15px;
+}

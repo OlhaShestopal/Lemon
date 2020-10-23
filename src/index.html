@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#" class="logo main__logo"
+      ><img class="logo__image" src="./img/logo.png" alt="lemon"
+    /></a>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="#"
+          ><img class="header__image" src="./img/logo-little.png" alt="lemon"
+        /></a>
+        
+        <label class="nav-btm-wraper">
+          <div class="nav-btm" aria-label="Menu botton"></div>
+          <input type="checkbox" class="nav-btm-checkbox">
+          <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">HOME</a>
+              
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Recipes </a>
+              <ul class="nav__sub-list">
+                <li class="nav__item sub__item">
+                  <a class="nav__link sub__link" href="#">RECOMMENDED</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link sub__link" href="#">POPULAR</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link sub__link" href="#">QUICK & EASY</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link sub__link" href="#">HEALTHY</a>
+                </li>
+                <li class="nav__item sub__item">
+                  <a class="nav__link sub__link" href="#">NEWEST</a>
+                </li>
+              </ul>
+              <!--nav__sub-list-->
+            </li>
+            <!--nav__item sub__list-->
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Photo Galleries</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Videos</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">All Categories</a></li>
+          </ul>
+          <!--nav__list-->
+        </nav>
+        </label>
+        <button class="button button-wiht-icon"> <span class="search-icon">Find a recipe</span> </button>
+      </div>
+      <!--container header__container-->
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-article">
+            <a href="#"
+              ><img class="hero__image-logo " src="./img/Logo4.png" alt=""
+            /></a>
+            <h1 class="hero__title">Bananas Foster Ice Cream Cake</h1>
+            <p class="hero__text">
+              If you're looking for decadence, look no further — you've found
+              the Holy Grail of desserts. Honestly, this cake makes us wonder
+              why Bananas Foster hasn't always been served on top of ice cream
+              cake.
+            </p>
+            <button class="button hero__btn">GET IT RECIPE</button>
+            </div>
+            <ul class="hero__nav-list">
+              <li class="hero__nav-item"> <button class="hero__nav-pointer-btn" aria-label="1"></button></li>
+              <li class="hero__nav-item"><button class="hero__nav-pointer-btn hero__nav-pointer-btn-active" aria-label="1"></button></li>
+              <li class="hero__nav-item"><button class="hero__nav-pointer-btn" aria-label="1"></button></li>
+              <li class="hero__nav-item"><button class="hero__nav-pointer-btn" aria-label="1"></button></li>
+              <li class="hero__nav-item"><button class="hero__nav-pointer-btn" aria-label="1"></button></li></ul></div>
+        <!--container first__section-->
+      </section>
+      <section class="second">
+        <div class="container second-container">
+            <ul class="second__list row">
+              <li class="second__item">
+                <figure>
+                  <img class="second__item-img" src="./img/meal1.png" alt="Yogurt Pie" />
+                  <figcaption>
+                    Raspberry & Cream Frozen Yogurt Pie
+                    <div class="second__comments">
+                      <span class="comments__icon clock-icon">35 mins</span>
+                      <span class="comments__icon line-icon comment-icon">7</span>
+                      <span class="comments__icon view-icon">14</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="second__item">
+                <figure>
+                  <img class="second__item-img" src="./img/meal2.png" alt="Ice Cream Sandwich" />
+                  <figcaption>
+                    Giant Ice Cream Sandwich
+                    <div class="second__comments">
+                      <span class="comments__icon clock-icon">20 mins</span>
+                      <span class="comments__icon line-icon comment-icon">4</span>
+                      <span class="comments__icon view-icon">356</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="second__item">
+                <figure>
+                  <img class="second__item-img" src="./img/meal3.png" alt="Sandwich Cake" />
+                  <figcaption>
+                    Dark Chocolate Crunch Ice Cream Sandwich Cake
+                    <div class="second__comments">
+                      <span class="comments__icon clock-icon">15 mins</span>
+                      <span class="comments__icon line-icon comment-icon">4</span>
+                      <span class="comments__icon view-icon">16</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+        </div>
+        <!--container second__section-->
+      </section>
+
+      <section class="section3">
+        <div class="container section3__container">
+          <img class="section3__img" src="./img/pie.png" alt="pie" />
+          <div class="content__section3">
+            <h3 class="section3__title">Bananas Foster Ice Cream Cake</h3>
+            <div class="section__info">
+              <div class="info__text">
+                <span class="info__item info-time">15mins</span
+                ><span class="info__item info-diagr">Easy</span>
+              </div>
+              <button class="button button-section3">SAVE RECIPE</button>
+            </div>
+            <div class="vertical__line"></div>
+            <p>
+              1 (8 ounce) container frozen whipped topping, thawed 20 chocolat
+              round wafers, divided 1 (7 1/4 ounce) bottle Smucker's® Hot Dark
+              Chocolate Microwaveable Topping, divid
+            </p>
+            <h4 class="section3__subtitle">Directions</h4>
+            <p>
+              ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting
+              to form an even layer. Spread with half of whipped topping. Break
+              or crush chocolate wafers and sprinkle over the whipped cream.
+              Microwave 1 cup of chocolate topping into small microgiwave-safe
+              bowl on HIGH for 30 seconds. Drizzle evenly over wafers. TOP with
+              remaining 8 to 9 ice cream sandwiches to form an even layer.
+              Spread with remaining whipped topping. Freeze 3 hours or
+              overnight.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="container section4__wrap">
+          <div class="section4__column section4__column1">
+            <div class="section4__box box1-1">
+              <div class="section4__box-header">
+                <h3 class="box__title">Chi-Chi or Chichi</h3>
+              </div>
+              <div class="box__inner">
+                <img
+                  class="box__inner-img inner__img-box11"
+                  src="./img/avatar.png"
+                  alt=""
+                />
+                <div class="box__inner-content">
+                  <p>
+                    Recipe by <br />
+                    Smuckersreg Toppings
+                  </p>
+                  <div class="second__section-comments">
+                    <span class="second__icon clock-icon">15 mins</span>
+                    <span class="second__icon line-icon comment-icon">12</span>
+                    <span class="second__icon view-icon">37</span>
+                  </div>
+                </div>
+                <!--box__inner-content-->
+              </div>
+              <!--box__inner-->
+              <div class="box__img">
+                <img class="box__img-fon" src="./img/img-box.png" alt="" />
+                <div class="control__circle box-btn">
+                  <button class="control__circle-item"></button>
+                  <button class="control__circle-item"></button>
+                  <button class="control__circle-item circle-dark"></button>
+                  <button class="control__circle-item"></button>
+                  <button class="control__circle-item"></button>
+                </div>
+              </div>
+            </div>
+            <!--section4__box-->
+            <div class="section4__box box1-2">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub1">Target</h3>
+                <img
+                  class="box__header-img"
+                  src="./img/Icons-blog.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="box__title box__title-2">Presentation line</h3>
+              <div class="box__inner">
+                <div class="box__inner-img">
+                  <span class="text-sircle">19%</span>
+                </div>
+                <div class="box__inner-content">
+                  <h4>Housewives</h4>
+                  <p>Lorem ipsum dolor sit amet, prima ceteros</p>
+                </div>
+                <!--box__inner-content-->
+              </div>
+              <!--box__inner-->
+              <div class="box__inner">
+                <div class="box__inner-img desc-circle2">
+                  <span class="text-sircle">65%</span>
+                </div>
+                <div class="box__inner-content">
+                  <h4>Newlyweds</h4>
+                  <p>Has brute elitr deserunt ea, assentior eloquentiam</p>
+                </div>
+                <!--box__inner-content-->
+              </div>
+              <div class="box__inner">
+                <div class="box__inner-img desc-circle3">
+                  <span class="text-sircle">50%</span>
+                </div>
+                <div class="box__inner-content">
+                  <h4>Business lady</h4>
+                  <p>Ei nam primis putent signiferumque</p>
+                </div>
+                <!--box__inner-content-->
+              </div>
+              <!--box__inner-->
+            </div>
+            <!--section4__box-->
+          </div>
+          <!--section4__column1-->
+          <div class="section4__column section4__column2">
+            <div class="section4__box box2-1">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub1">Recipe</h3>
+                <img
+                  class="box__header-img"
+                  src="./img/Icons-blog.png"
+                  alt=""
+                />
+              </div>
+              <ul class="box__list">
+                <li class="box__item">
+                  <a class="box__link" href="#">easy</a>
+                </li>
+                <li class="box__item">
+                  <a class="box__link" href="#">middle</a>
+                </li>
+                <li class="box__item">
+                  <a class="box__link" href="#">long </a>
+                </li>
+              </ul>
+              <div class="box21__content">
+                <a href="#"
+                  ><img
+                    class="box21__content-img"
+                    src="./img/132.png"
+                    alt="" /></a
+                ><a class="box21__content-text" href="#">
+                  <p class="box21__content-text1">
+                    <span class="box21__content-span">by</span> Smuckersreg
+                    Toppings
+                  </p>
+                  <p>
+                    Thanks for the recipe lorem ipsum bla bla bla Thanks for the
+                    recipe lore
+                  </p></a
+                >
+              </div>
+              <div class="box21__content">
+                <a href="#"
+                  ><img
+                    class="box21__content-img"
+                    src="./img/222.png"
+                    alt="" /></a
+                ><a class="box21__content-text" href="#">
+                  <p class="box21__content-text1">
+                    <span class="box21__content-span">by</span> Smuckersreg
+                    Toppings
+                  </p>
+                  <p>Thanks for the recipe lorem nks for the recipe</p></a
+                >
+              </div>
+              <div class="box21__content">
+                <a href="#"
+                  ><img
+                    class="box21__content-img"
+                    src="./img/3333.png"
+                    alt="" /></a
+                ><a class="box21__content-text" href="#">
+                  <p class="box21__content-text1">
+                    <span class="box21__content-span">by</span> Smuckersreg
+                    Toppings
+                  </p>
+                  <p>Thanks for the recipe lorem nks for the recipe</p></a
+                >
+              </div>
+
+              <!--box__inner-content-->
+            </div>
+            <div class="section4__box box2-2">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub1">Tags</h3>
+              </div>
+              <!--section4__box-header-->
+              <div class="box22__links-container">
+                <a class="box__22-link" href="#">#yummy</a>
+                <a class="box__22-link" href="#">#sweet</a>
+                <a class="box__22-link" href="#">#dinner</a>
+                <a class="box__22-link" href="#">#lunch</a>
+                <a class="box__22-link" href="#">#breakfast</a>
+                <a class="box__22-link" href="#">#fresh</a>
+                <a class="box__22-link" href="#">#tasty</a>
+                <a class="box__22-link" href="#">#delish</a>
+                <a class="box__22-link" href="#">#delicious</a>
+                <a class="box__22-link" href="#">#delicious</a>
+                <a class="box__22-link" href="#">#food</a>
+              </div>
+            </div>
+            <!--section4__box box2-2-->
+            <div class="section4__box box2-3">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub1">Calendar</h3>
+              </div>
+              <!--section4__box-header-->
+              <div class="calendar__container">
+                <h3 class="calendar-title">June 2017</h3>
+                <table>
+                  <tr class="calendar-days">
+                    <td>Su</td>
+                    <td>Mo</td>
+                    <td>Tu</td>
+                    <td>We</td>
+                    <td>Th</td>
+                    <td>Fr</td>
+                    <td>Sa</td>
+                  </tr>
+                  <tr>
+                    <td class="last-month">28</td>
+                    <td class="last-month">29</td>
+                    <td class="last-month">30</td>
+                    <td class="last-month">31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="last-month">1</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!--section4__box box2-3-->
+          </div>
+          <!--section4__column2-->
+          <div class="section4__column section4__column3">
+            <div class="section4__box box3-1">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub2">Popular Now</h3>
+              </div>
+              <!--section4__box-header-->
+              <div class="box3-1__container">
+                <h4 class="box3-1__title">Vanilla Frozen Coffee</h4>
+                <p class="box3-1__description">
+                  Mix coffee, sugar and creamer. Pour into blender and add ice
+                  cubes. Blend until smooth.
+                </p>
+                <div class="box__inner3-1">
+                  <button class="button button-box3-1">GET IT RECIPE</button>
+                  <div class="second__section-comments">
+                    <span class="second__icon clock-icon">35 mins</span>
+                    <span class="second__icon line-icon comment-icon">7</span>
+                    <span class="second__icon view-icon">14</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--section4__box box3-1-->
+            <div class="section4__box box3-2">
+              <div class="section4__box-header">
+                <h3 class="box__title box__title-sub1">Timeline</h3>
+                <img
+                  class="box__header-img"
+                  src="./img/Icons-blog.png"
+                  alt=""
+                />
+              </div>
+              <!--section4__box-header-->
+              <h3 class="box__title box__title-2">Time line</h3>
+              <div class="box3-2__container">
+                <div class="diagram aesy"></div>
+                <div class="diagram middle"></div>
+                <div class="diagram long"></div>
+              </div>
+              <p>
+                Eam adhuc iudico percipitur ex, ut malis audire voluptaria has.
+              </p>
+            </div>
+            <!--section4__box box3-2-->
+          </div>
+          <!--section4__column3-->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__menu">
+        <a class="logo-link" href="#"
+          ><img class="logo__image" src="./img/logo3.png" alt="lemon"
+        /></a>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">Recipes </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#"> Photo Galleries</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">Videos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link footer__link" href="#">All Categories</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__lemon">
+          <p>2016-2017 LEMON. All right reserved</p>
+          <img class="footer__img" src="./img/Icons.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

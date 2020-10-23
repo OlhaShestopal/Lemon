@@ -1,0 +1,75 @@
+$gap-x: 20px;
+/*
+.second-container {
+  background-color: #fff;
+  margin-top: 85px;
+
+  @include medium {
+    margin-top: 20px;
+  }
+  @include smoll {
+    padding: 0;
+    margin-top: 50px;
+  }
+}*/
+.second {
+  margin-top: 85px;
+}
+.second__item-img {
+  padding: 0;
+  margin: 0;
+}
+.second__list {
+  gap: $gap-x;
+}
+
+.second__item {
+  font-size: 18px;
+  max-width: 313px;
+  @media screen and (max-width: 1064px) {
+    max-width: calc(50% - #{$gap-x});
+    display: flex;
+    justify-content: center;
+  }
+  @include smoll {
+    max-width: 100%;
+  }
+}
+
+.second__comments {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.comments__icon {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.comments__icon::after {
+  content: "";
+  display: block;
+  height: 11px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clock-icon::after {
+  width: 11px;
+  background-image: url(../img/Clock-Icon.png);
+}
+
+.comment-icon::after {
+  width: 13px;
+  background-image: url(../img/Comment-Icon.png);
+}
+
+.view-icon::after {
+  top: 1px;
+  height: 9px;
+  width: 13px;
+  background-image: url(../img/View-Icon.png);
+}

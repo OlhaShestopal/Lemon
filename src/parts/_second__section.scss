@@ -1,32 +1,35 @@
-$gap-x: 20px;
-/*
+$gap-x: 40px;
+
 .second-container {
   background-color: #fff;
   margin-top: 85px;
+  padding: 40px 43px;
+  @media screen and (max-width: 1105px) {
+    padding: 40px 0;
+  }
 
   @include medium {
     margin-top: 20px;
   }
   @include smoll {
-    padding: 0;
     margin-top: 50px;
   }
-}*/
-.second {
-  margin-top: 85px;
 }
-.second__item-img {
-  padding: 0;
-  margin: 0;
+
+.second__card {
+  display: block;
+  max-width: 313px;
+  position: relative;
 }
+
 .second__list {
   gap: $gap-x;
 }
 
 .second__item {
   font-size: 18px;
-  max-width: 313px;
-  @media screen and (max-width: 1064px) {
+
+  @media screen and (max-width: 1105px) {
     max-width: calc(50% - #{$gap-x});
     display: flex;
     justify-content: center;

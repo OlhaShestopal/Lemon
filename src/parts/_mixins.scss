@@ -1,6 +1,20 @@
 $large-size: 1072px;
+$big-size: 1105px;
+$great-size: 994px;
 $medium-size: 779px;
 $smoll-size: 575px;
+
+@mixin great {
+  @media screen and (max-width: $great-size) {
+    @content;
+  }
+}
+
+@mixin big {
+  @media screen and (max-width: $big-size) {
+    @content;
+  }
+}
 
 @mixin smoll {
   @media screen and (max-width: $smoll-size) {

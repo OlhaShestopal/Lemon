@@ -1,0 +1,158 @@
+.section-forms {
+  margin-top: 100px;
+  @include smoll {
+    margin-top: 0;
+  }
+}
+.section-forms-container {
+  box-shadow: none;
+}
+.form {
+  background: #ffffff;
+  box-shadow: 0 0 15px #9d9999;
+}
+.form-header {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0 8px 0;
+  margin: 0 25px;
+  border-bottom: 2px solid #dddddd;
+}
+.two-forms {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  @include smoll {
+    display: none;
+  }
+}
+
+.forms__item {
+  max-width: 330px;
+  width: 100%;
+}
+.form__item-comtent {
+  padding: 30px 30px 25px 30px;
+}
+.form-content__title {
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-content__input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #c2c2c2;
+
+  &::placeholder {
+    font-size: 16px;
+    color: #dddddd;
+  }
+  &:focus {
+    box-shadow: inset 1px 1px 4px 4px #c2c2c2;
+    outline: none;
+  }
+}
+.form-link {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.block-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #9a9a9a;
+
+  margin-top: 17px;
+}
+.label-forget {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+}
+.form-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-form {
+  background: none;
+}
+.forget-links {
+  margin: 15px 0;
+  img {
+    display: inline;
+  }
+}
+.button-form-two {
+  border: none;
+}
+.form-footer {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+/*form-post*/
+
+.form-post {
+  max-width: 840px;
+  margin: 120px auto 0;
+  padding: 25px 45px 35px 40px;
+  @include smoll {
+    display: none;
+    margin: 0;
+  }
+}
+
+.form-post__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.span-post {
+  font-size: 24px;
+}
+.post-header__inner {
+  &::before {
+    content: " / ";
+  }
+}
+.form-post__content {
+  background: #f6f6f6;
+  margin: 0 auto;
+  max-width: 756px;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-content__img {
+  margin-right: 65px;
+}
+.post-content__input {
+  height: 40px;
+  width: 65%;
+  margin-right: 4px;
+  border: 1px solid #c2c2c2;
+}
+.post-content-btn {
+  background: #383737;
+  color: #ffff;
+  height: 40px;
+  max-width: 88px;
+  font-size: 16px;
+  border: 1px solid #c2c2c2;
+}

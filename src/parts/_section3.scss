@@ -1,9 +1,26 @@
 .section3__container {
+  margin-top: 85px;
   display: flex;
   position: relative;
   height: 440px;
   overflow: hidden;
   line-height: 1;
+  background: #fff;
+  @include big {
+    height: auto;
+    width: auto;
+  }
+  @include medium {
+    margin-top: 20px;
+  }
+  @include smoll {
+    display: none;
+  }
+}
+
+.section3__img {
+  position: relative;
+  max-width: 50%;
 }
 .section3__container::before {
   content: "";
@@ -19,9 +36,16 @@
   opacity: 0.6;
   left: 42%;
 }
-.content__section3 {
+.section3__content {
   padding: 40px 70px 40px 40px;
+  @include medium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
 }
+
 .button-section3 {
   margin-top: 0;
 }
@@ -30,6 +54,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+  @include medium {
+    justify-content: flex-start;
+  }
 }
 .info__item {
   margin-right: 10px;
@@ -43,11 +70,11 @@
   content: url(../img/Easy-Icon.png);
   margin: 0 5px;
 }
-.section3__title {
+.section3__content-title {
   font-size: 32px;
   color: #055555;
 }
-.section3__subtitle {
+.section3__content-subtitle {
   margin: 25px 0;
 }
 .vertical__line {
@@ -55,8 +82,11 @@
   width: 2px;
   height: 245px;
   background: #dddddd;
-  right: 50px;
+  right: 10px;
   cursor: pointer;
+  @include medium {
+    display: none;
+  }
 }
 .vertical__line::after {
   content: "";
@@ -64,4 +94,28 @@
   height: 100px;
   width: 2px;
   background: #555555;
+  @include medium {
+    display: none;
+  }
+}
+
+@include big {
+  .section3__content-description2 {
+    display: none;
+  }
+  .section3__content-subtitle {
+    display: none;
+  }
+}
+
+@include medium {
+  .section3__content-title {
+    font-size: 25px;
+  }
+  .info__item {
+    display: none;
+  }
+  .section3__content-description1 {
+    font-size: 18px;
+  }
 }

@@ -4,8 +4,9 @@ $gap-x: 40px;
   background-color: #fff;
   margin-top: 85px;
   padding: 40px 43px;
-  @media screen and (max-width: 1105px) {
-    padding: 40px 0;
+
+  @include big {
+    padding-right: 0;
   }
 
   @include medium {
@@ -13,6 +14,7 @@ $gap-x: 40px;
   }
   @include smoll {
     margin-top: 50px;
+    padding: 0 0;
   }
 }
 
@@ -20,6 +22,14 @@ $gap-x: 40px;
   display: block;
   max-width: 313px;
   position: relative;
+
+  @include big {
+    max-width: 290px;
+  }
+  @include smoll {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
 .second__list {
@@ -29,13 +39,20 @@ $gap-x: 40px;
 .second__item {
   font-size: 18px;
 
-  @media screen and (max-width: 1105px) {
-    max-width: calc(50% - #{$gap-x});
+  @include big {
+    width: calc(50% - #{$gap-x});
     display: flex;
     justify-content: center;
   }
+
   @include smoll {
-    max-width: 100%;
+    width: 100%;
+    .second__item-img {
+      width: 100%;
+    }
+    .second__card-text {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -48,6 +65,7 @@ $gap-x: 40px;
   position: relative;
   padding-left: 15px;
   padding-right: 10px;
+  font-size: 12px;
 }
 .comments__icon::after {
   content: "";
@@ -55,7 +73,7 @@ $gap-x: 40px;
   height: 11px;
   position: absolute;
   left: 0;
-  top: -1px;
+  top: 0;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

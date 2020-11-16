@@ -1,235 +1,93 @@
-.section4__wrap {
-  background: none;
-  box-shadow: none;
-  padding: 0 50px;
+.section4 {
+  margin-top: 140px;
+  @include large {
+    margin-top: 0;
+  }
+}
+.container-section4 {
   display: flex;
   justify-content: space-between;
+  box-shadow: none;
+  @include large {
+    display: none;
+  }
 }
+
 .section4__box {
-  width: 290px;
   background: #fff;
-  box-shadow: 0 0 10px #9d9999;
-  margin-bottom: 50px;
-}
-.section4__box-header {
-  border-bottom: #dddddd solid 2px;
-  width: 85%;
-  margin: 0 auto;
-  font-size: 22px;
-  text-align: center;
-  color: #055555;
-  padding: 25px 0 15px 0;
-}
-.box__inner {
-  display: flex;
-  padding: 10px 0;
-  align-items: center;
-}
-.box__inner-img {
-  padding: 0 15px;
-  position: relative;
-  display: block;
-  min-width: 58px;
-  min-height: 58px;
-
-  border: #eeeeee solid 3px;
-  border-radius: 50%;
-  line-height: 1;
-  margin: 0 25px;
-}
-.box__img-fon {
-  display: block;
+  max-width: 519px;
   width: 100%;
-}
-.box__img {
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-}
-.box-btn {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  margin: 0 auto;
+  height: 100px;
+  box-shadow: 0 0 15px #9d9999;
+  padding: 22px 47px 50px 33px;
+  height: 519px;
 }
 
-.section4__column {
+.section4-box-text {
+  position: relative;
+  padding-bottom: 100px;
+}
+.section4-box-row {
   display: flex;
   flex-direction: column;
-}
-.section4__box-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(../img/section4-box1.png) center center no-repeat;
 }
-.box__title-2 {
+.section4__box-title {
   font-size: 20px;
-  color: #055555;
-  padding: 15px 20px;
-}
-.box__title-sub1 {
-  font-size: 20px;
-  color: #000000;
-}
-.box__header-img {
-  display: block;
-}
-
-.inner__img-box11 {
-  border: none;
-}
-.box__inner-img::after {
-  content: url(../img/Shape-6.png);
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -3px;
-}
-.desc-circle2::after {
-  content: url(../img/Shape-5.png);
-  top: -3px;
-  right: -3px;
-}
-.desc-circle3::after {
-  content: url(../img/Shape-7.png);
-  top: 26px;
-  right: -3px;
-}
-.text-sircle {
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-}
-
-.box__list {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 15px 0 25px 0;
-}
-.box__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #585858;
-  font-weight: 700;
-}
-.box__link:active {
-  color: #000000;
-}
-
-/*box21__content*/
-.box21__content {
-  display: flex;
-  padding: 0 20px 20px 20px;
-}
-.box21__content-img {
-  margin-right: 15px;
-}
-.box21__content-text {
-  text-decoration: none;
-  color: #000000;
-}
-.box21__content-text1 {
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-.box21__content-span {
-  color: #656565;
-}
-
-.box22__links-container {
-  padding: 13px 15px 15px 10px;
-}
-.box__22-link {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 12px;
-  color: #000000;
-  padding: 0px 0px 15px 8px;
-}
-/*calendar__container*/
-
-.calendar__container {
-  padding: 25px;
-}
-.calendar-title {
-  font-size: 18px;
-  text-align: center;
-  position: relative;
-}
-.calendar-title::after {
-  content: "";
-  display: block;
-  width: 7px;
-  height: 7px;
-  border-top: #555555 solid 2px;
-  border-left: #555555 solid 2px;
-  transform: rotate(135deg);
-
-  position: absolute;
-  right: 0;
-  top: 5px;
-
-  cursor: pointer;
-}
-.calendar-title::before {
-  content: "";
-  display: block;
-  width: 7px;
-  height: 7px;
-  border-bottom: #555555 solid 2px;
-  border-right: #555555 solid 2px;
-  transform: rotate(135deg);
-  position: absolute;
-  left: 0;
-  top: 5px;
-
-  cursor: pointer;
-}
-table {
+  font-weight: 400;
   width: 100%;
-  padding-top: 10px;
-  font-size: 14px;
-  line-height: 2;
-}
-.calendar-days {
-  text-decoration: underline;
-}
-.last-month {
-  color: #a5a5a5;
+  border-bottom: 2px solid #dddddd;
 }
 
-/*section4__column3*/
-
-.box__title-sub2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #921026;
+.section4__box-wrapper {
+  max-width: 130px;
+  width: auto;
+  position: relative;
+  left: 15px;
 }
-
-/*box3-1*/
-.box3-1 {
-  background: url(../img/bgg-section31png.png) center center no-repeat;
-  background-size: cover;
+.section4-wrapper__item1 {
+  text-align: center;
+  font-size: 30px;
 }
-.box3-1__container {
-  padding: 25px 20px 120px 20px;
+.section4-wrapper__item2 {
+  text-align: center;
+  font-size: 16px;
+  color: #a9a9a9;
 }
-.box__inner3-1 {
+.section4__box-content {
+  padding-top: 25px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.button-box3-1 {
-  padding: 0;
-  margin-top: 20px;
+.section4__box-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
 }
-.box3-1__title {
-  font-size: 22px;
-  padding-bottom: 17px;
+.section4__box-line {
+  margin: 12px 0 16px;
 }
-
-/*Box 3-2*/
+.section4__box-name {
+  font-size: 24px;
+}
+.section4__box-reviews {
+  font-size: 20px;
+  padding: 15px 0 20px 0;
+  border-top: 2px solid #dddddd;
+}
+.section4__box-comment {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  &::after {
+    content: "";
+    display: block;
+    width: 165px;
+    height: 65px;
+    background: url(../img/Signature.png) center center no-repeat;
+    position: absolute;
+    right: 47px;
+  }
+}
